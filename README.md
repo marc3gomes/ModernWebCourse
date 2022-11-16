@@ -36,6 +36,16 @@ Therefore, even experienced users can extract important concepts.
 
  **`Conceitos Web:`** JavaScript is a web -connected language and it is absolute that we must understand how web programming works, so we study the concepts of HTTP protocol, web server, client side x server side, static x dynamic content. HTML5, CSS3, JavaScript. DNS, https, web service, cloud computing.
 
+### Master
+
+:eight_pointed_black_star: [@cod3rcursos](https://github.com/cod3rcursos) 
+
+---
+
+### Links
+- [Modern Web Course](https://www.udemy.com/course/curso-web/)
+- [Notes](NOTES.md)
+
 ---
 
 ### Exercises
