@@ -1,6 +1,6 @@
-![BANNER CURSO](https://codeboost.com.br/img/ilustra-ideal.svg)
-
 # Modern Web Course Complete with JS, HTML, CSS, SQL
+
+![BANNER CURSO](https://codeboost.com.br/img/ilustra-ideal.svg)
 
 ### Repository information
 
@@ -53,4 +53,4 @@ Therefore, even experienced users can extract important concepts.
 
 ### Exercises
 
-- **[NAME]()**
+- **[Discover](https://github.com/marc3gomes/ModernWebCourse/tree/master/discover)**
