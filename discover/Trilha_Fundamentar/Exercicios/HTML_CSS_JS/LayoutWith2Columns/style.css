@@ -1,0 +1,15 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    gap: 1rem;
+}
+
+aside {
+    background-color: #ff0066;
+    flex-basis: 28%;
+}
+
+main {
+    background-color: #66ff00;
+    flex: 1;
+}

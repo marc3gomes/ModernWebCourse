@@ -12,6 +12,8 @@ And also maintain an environment of easy access for future consultations.
 
 > Please feel free to contribute better solutions to all content exposed in this repository. Mainly English, I'm still learning.
 
+---
+
 ### Purpose of the Course
 
 Introduction to the JavaScript language, addressing initial questions to the extremely advanced.

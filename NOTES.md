@@ -1,119 +1,16 @@
 # Basic notes on the foundations of language
 
-#### `isInteger()`
-Is the number an integer?
+#### `OPERATORS`
 
-Return: True or False
+**Assignment**
+- `=` = Assignment
+- `+=` = Additive Assignment *(A addition is made along with the assignment)*
+- `-=` = Subtractive Assignment
+- `*=` = Multiplicative Assignment
+- `/=` = Divisible Assignment
+- `%=` = Modular Assignment 
 
-Example:
-```
-const average = 7
-console.log(Number.isInteger(average))
-
-// expected output: true
-```
-
-#### `toFixed()`
-Sets the number of decimal places after the dot
-
-Example:
-```
-const average = 7.89364
-console.log(average.toFixed(2))
-
-// expected output: 7.89
-```
-
-#### `toString()`
-Transforms the value passed in the variable into a string
-
-Example:
-```
-const average = 7
-console.log(average.toString())
-
-// expected output: 7
-```
-
-Convert to binary value
-
-Example:
-```
-const average = 7.87
-console.log(average.toString(2))
-
-// expected output: 111.11011110101110000101000111101011100001010001111011
-```
-
-#### `charAt(2)`
-Returns the character that is at the index indicated within the parentheses.
-
-Example:
-```
-const school = "Cod3r"
-console.log(school.charAt(2))
-
-// expected output: d
-```
-
-#### `indexOf()`
-It will return the index based on the entered character.
-
-Example:
-```
-const school = "Cod3r"
-console.log(school.indexOf(3))
-
-// expected output: 3
-```
-
-#### `substring()`
-Returns only the characters that were not indicated within the parentheses
-
-Example:
-```
-const school = "Cod3r"
-console.log(school.substring(1))
-
-// expected output: od3r
-```
-
-#### `replace()`
-Replaces data
-
-Example:
-```
-const school = "Cod3r"
-console.log(school.replace(3, 'e'))
-
-// expected output: Coder
-```
-
-#### `split()`
-Convert data into an array.
-
-Within the parentheses we need to define what we want to use as a separator
-
-Example:
-```
-const names = 'Ana, Maria, Pedro'
-console.log(names.split(','))
-
-// expected output: ['Ana', 'Maria', 'Pedro']
-```
-
-#### `concat()`
-Concat data with values
-
-The symbol of "+" in place of ".concat" can be used when we are using strings.
-
-Example:
-```
-const school = "Cod3r"
-console.log('School '.concat(school).concat('!'))
-
-// expected output: School Cod3r!
-```
+---
 
 #### `Template String`
 Used to concatenate data more elegant and more practical.
@@ -121,12 +18,11 @@ Used to concatenate data more elegant and more practical.
 The string template considers line breaks without errors.
 
 Example:
-```
+```javascript
 const name = 'Rebeca'
 const template = `
     Hello
     ${name}!`
-
 console.log(template)
 
 // expected output: Hello
@@ -134,24 +30,9 @@ console.log(template)
 ```
 
 It is possible to use logical expressions as long as it is inside the template $ {1 + 1}.
-
 We can also define values for variables example: $ {Name ('Rebeca')}
 
-
-### `Negotia using '!'`
-
-To turn a number into a boolean value, we need to use logical denial: `!`
-
-If we use denial twice, we will reverse the effect of the first, making the value in True
-
-Example:
-```
-const isActive = 1
-
-console.log(!isActive)
-
-// expected output: False
-```
+---
 
 ### `Array`
 
@@ -162,7 +43,7 @@ The array groups multiple values in a linear form.
 Within JavaScript the array is object.
 
 Example:
-```
+```javascript
 const values = [A, B, C, D]
 console.log(values[0], values[3])
 
@@ -172,7 +53,7 @@ console.log(values[0], values[3])
 We can also access the amount of array elements through `length`.
 
 Example:
-```
+```javascript
 console.log(values.length)
 
 // expected output: 4
@@ -181,7 +62,7 @@ console.log(values.length)
 We can add new elements to the array using the `push` function.
 
 Example:
-```
+```javascript
 values.push(E, false, null, 'test')
 console.log(values)
 
@@ -191,7 +72,7 @@ console.log(values)
 We can remove the last value of the array using the Function `pop`.
 
 Example:
-```
+```javascript
 console.log(values.pop())
 
 // expected output: test
@@ -200,8 +81,186 @@ console.log(values.pop())
 Or we can exclude an array value using its index, with the `delete` function.
 
 Example:
-```
+```javascript
 delete values[0]
 
 // expected output: [ <1 empty item>, B, C, D, E, false, null ]
+```
+
+---
+
+### `Object`
+
+Object is a collection, a group of pairs: key and value.
+
+We can create the object literally or through an empty object and add the attributes later.
+
+The way to create an object in JavaScript is from a function.
+
+Example:
+```javascript
+const product = {
+    name: 'Polo shirt'
+    price: '70'
+}
+console.log(product)
+
+// expected output: { name: 'Polo shirt', price: '70' }
+```
+
+---
+
+
+### `Function`
+
+The function plays a fundamental role in the JS language, almost everything is a function within the language.
+
+To have an analogy of the function's importance, we could say that: If JavaScript were a country, the function would be the president.
+
+A function is an action, it executes a process based on a sequence of code.
+
+Example:
+```javascript
+//No return function
+function printSum(a, b) {
+    console.log(a + b)
+}
+
+printSum(2, 3)
+
+// expected output: 5
+
+---
+
+//Function with return
+function sum(a, b = 0) {
+    return a + b
+}
+
+console.log(soma(2, 3))
+
+// expected output: 5
+
+---
+
+//Storing a function in a variable
+const printSum = function (a, b) {
+    console.log(a + b)
+}
+
+printSum(2, 3)
+
+// expected output: 5
+
+---
+
+//Storing an arrow function in a variable
+const sum = (a, b) => {
+    return a + b
+}
+console.log(sum(2, 3))
+
+// expected output: 5
+
+---
+
+//Implicit return
+const subtraction = (a, b) => a - b
+console.log(subtraction(2, 3))
+
+// expected output: -1
+```
+
+---
+
+### `Var`
+
+When we create a variable outside a function using "VAR", we will have it globally available, even if it is inside a code block. From the moment we have the "VAR" associated within a function, we will only have access to this variable in the scope of the function.
+
+**Variables defined as "var", have global scope and function scope**
+
+Example:
+```javascript
+var number = 1
+{
+    var number = 2
+    console.log('inside =', number)
+}
+console.log('outside =', number)
+
+// expected output: inside = 2
+// outside = 2
+```
+
+---
+
+### `Let`
+
+Unlike var, "LET" has one more scope, the block scope.
+
+So even if it is not a function, it will respect the block in which the variable was created.
+
+**Variables defined as "let", have global scope, function scope and block scope**
+
+Example:
+```javascript
+let number = 1
+{
+    let number = 2
+    console.log('inside =', number)
+}
+console.log('outside =', number)
+
+// expected output: inside = 2
+// outside = 1
+```
+
+---
+
+### `Hoisting`
+
+Still talking about variables, there is a concept within JavaScript that does an icing, throwing a variable defined as var upwards.
+
+Unlike if a let variable is used, this concept does not occur.
+
+Example:
+```javascript
+// Using var
+console.log('a =', a)
+var a = 2
+console.log('a =', a)
+
+// expected output: a = undefined
+a = 2
+
+---
+
+// Using let
+console.log('a =', a)
+let a = 2
+console.log('a =', a)
+
+// expected output: err
+```
+
+---
+
+### `Destructuring`
+
+Retira algo da estrutura de um Array || Object.
+
+Example
+```javascript
+const pessoa = {
+    nome: 'Ana',
+    idade: 5,
+    endereco: {
+        logradouro: 'Rua ABC',
+        numero: 1000
+    }
+}
+
+const { nome, idade } = pessoa
+
+console.log(nome, idade)
 ```

@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+header {
+    margin: 40px 60px 0;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header nav  ul { 
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    list-style-type: none;
+}
+
+header nav ul li:last-child {
+    background-color: #0000FF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+
+ }
+
+ header nav ul li a {
+    text-transform:uppercase;
+    font-size: .8rem;
+
+ }
