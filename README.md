@@ -1,6 +1,6 @@
-![BANNER CURSO](https://suporte-corsair.com.br/public/banner-es.jpg)
+![BANNER CURSO](https://codeboost.com.br/img/ilustra-ideal.svg)
 
-# Modern Web Course Complete with ECMAScript
+# Modern Web Course Complete with JS, HTML, CSS, SQL
 
 ### Repository information
 
@@ -10,17 +10,17 @@ The purpose of the repository is to share my studies with people who want to con
 
 And also maintain an environment of easy access for future consultations.
 
+Esse repositório contem mais de um curso.
+
 > Please feel free to contribute better solutions to all content exposed in this repository. Mainly English, I'm still learning.
 
 ---
 
 ### Purpose of the Course
 
-Introduction to the JavaScript language, addressing initial questions to the extremely advanced.
+Introduction to the JavaScript, HTML and CSS language, addressing initial questions to the extremely advanced.
 
 Therefore, even experienced users can extract important concepts.
-
-*Course completed in 2019*
 
 ### Studied subjects
 
@@ -40,12 +40,13 @@ Therefore, even experienced users can extract important concepts.
 
 ### Master
 
-:eight_pointed_black_star: [@cod3rcursos](https://github.com/cod3rcursos) 
+:eight_pointed_black_star: [@cod3rcursos](https://github.com/cod3rcursos) | :eight_pointed_black_star: [@jakeliny](https://github.com/jakeliny) | :eight_pointed_black_star: [@diego3g](https://github.com/diego3g) | :eight_pointed_black_star: [@rodrigorgtic](https://github.com/rodrigorgtic) | :eight_pointed_black_star: [@maykbrito](https://github.com/maykbrito)
 
 ---
 
 ### Links
 - [Modern Web Course](https://www.udemy.com/course/curso-web/)
+- [Discover Rocketseat](https://www.rocketseat.com.br/discover)
 - [Notes](NOTES.md)
 
 ---
