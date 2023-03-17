@@ -24,7 +24,7 @@ Therefore, even experienced users can extract important concepts from the course
 
 * Introduction to programming with concepts such as algorithm, programming logic, data and data manipulation and problem solving with examples. The classes in this section also explore how the web works, with the fundamentals of URL, HTTP, TCP, IP, proxies, client and server and browser.
 
-* Computer operation, revealing the properties of hardware, peripherals, software, firmware, drivers, operating systems, programs, RAM memory, HD and SSD and flooding.
+- Computer operation, revealing the properties of hardware, peripherals, software, firmware, drivers, operating systems, programs, RAM memory, HD and SSD and flooding.
 
 * Studies investigate the functioning of the internet, including computer networking and communication, IP and MAC Address, servers, DNS and HTTP.
 
@@ -44,6 +44,27 @@ Therefore, even experienced users can extract important concepts from the course
 
 * Version control types, settings, CheatSheet, states (modified, prepared and committed), git log, hash values and head.
 
+-  Abordamos callbacks, sistemas síncrono e assíncrono, promises 
+
+---
+
+### Tools
+- VSCode
+- Git
+- Github
+- DevDocs
+- Terminal
+- Codepen
+- CodeSandBox
+- Navegadores
+- Google chrome
+- Safari
+
+---
+
+### Frameworks / Modules
+- express
+- axios
 ---
 
 ### Master
@@ -61,5 +82,6 @@ Therefore, even experienced users can extract important concepts from the course
 
 ### Exercises
 
-- **[Discover 1](https://github.com/marc3gomes/ModernWebCourse/tree/master/discover)**
+- **[Discover github](https://github.com/marc3gomes/ModernWebCourse/tree/master/discover)**
 * **[Discover codepen](https://codepen.io/collection/pgaVkZ)**
+- **[Discover codesandbox](https://codesandbox.io/u/marc3gomes)**

@@ -24,6 +24,78 @@ Example:
 
 ---
 
+#### HTTP:
+
+- `OPTIONS` = Info da disponibilidade da requisicão
+Seguro: Sim
+Idempotente: Sim
+Body Request: Não
+Body Response: Não
+Cacheable: Não
+Uso em form HTML: Não 
+
+- `GET` = Pegar recurso e receber dados
+Seguro: Sim
+Idempotente: Sim
+Body Request: Não
+Body Response: Sim
+Cacheable: Sim
+Uso em form HTML: Sim
+
+- `HEAD` =  Semelhante ao Get mas recebemos somente o cabecalho
+Seguro: Sim
+Idempotente: Sim
+Body Request: Não
+Body Response: Não
+Cacheable: Não
+Uso em form HTML: Sim 
+
+- `POST` = Enviar/Publicar/Cadastrar recurso
+Seguro: Não
+Idempotente: Não
+Body Request: Sim
+Body Response: Sim
+Cacheable: Sim
+Uso em form HTML: Sim
+
+- `PUT` = Criar/Atualizar recurso
+Seguro: Não
+Idempotente: Sim
+Body Request: Sim
+Body Response: Não
+Cacheable: Não
+Uso em form HTML: Não
+ 
+- `PATCH` = Modificar parcial o recurso
+Seguro: Não
+Idempotente: Não
+Body Request: Sim
+Body Response: Sim
+Cacheable: Não
+Uso em form HTML: Não
+  
+- `DELETE` = Remover um recurso
+Seguro: Não
+Idempotente: Sim
+Body Request: Sim
+Body Response: Sim
+Cacheable: Não
+Uso em form HTML: Não
+
+**Curl:**
+- `-L` = Redirecionamento
+- `-i` = Visualizar o body e os cabeçalhos da requisição
+- `-I` = Visualizar apenas os cabeçalhos da requisição 
+- `-O` = Fazer o download de um arquivo, e escolher o nome
+- `-s` = Esconder informações de progresso
+- `-#` = Barra de progresso simples
+- `-X` = Especificar qual método usará
+- `-H` = Adicionar um cabeçalho
+- `-d` = Adicionar orgumentos
+
+
+---
+
 ## Basic notes on the foundations of language JS
 
 #### `OPERATORS`
@@ -289,4 +361,58 @@ const pessoa = {
 const { nome, idade } = pessoa
 
 console.log(nome, idade)
+```
+
+---
+
+### `Callback`
+
+Podemos utilizar uma funcão como argumento para outra funcão
+
+Example
+```javascript
+function imprimirDado(dados) {
+    console.log(dados())
+}
+
+imprimirdado(function () {
+    return 'Olá mundo!'
+})
+```
+
+---
+
+### `Promise`
+
+Um objeto JavaScript com a compromessa de que algo será realizado
+
+*Stagios:*
+- `Pending` = Estado inicial, promessa iniciada
+- `Fulfilled` = Promessa aceita/concluída
+- `Rejectd` = Promessa rejeitada/concluída
+- `Settled` = Concluiída, seja aceita ou rejeitada
+
+Example
+```javascript
+let pedidoCar = True
+
+console.log('Pedir Uber')
+
+const promise = new Promise ((resolve, reject) => 
+{
+    if (pedidoCar) {
+        return resolve('Carro chegou!')
+    }
+    
+    return reject('Motorista recusou')
+})
+
+console.log('Aguardando')
+
+promise
+    .then(result => console.log(result))
+    .catch(error => console.log(error))
+    .finally(() => console.log('Obrigado, por ussar nosso aplicativo.'))
+
+
 ```
