@@ -101,12 +101,51 @@ Uso em form HTML: Não
 #### `OPERATORS`
 
 **Assignment**
-- `=` = Assignment
-- `+=` = Additive Assignment *(A addition is made along with the assignment)*
-- `-=` = Subtractive Assignment
-- `*=` = Multiplicative Assignment
-- `/=` = Divisible Assignment
-- `%=` = Modular Assignment 
+- `=` : Assignment
+- `+=` : Additive Assignment *(A addition is made along with the assignment)*
+- `-=` : Subtractive Assignment
+- `*=` : Multiplicative Assignment
+- `/=` : Divisible Assignment
+- `%=` : Modular Assignment
+
+**Others**
+- `==` : igual
+- `===` : estritamente igual
+- `!=` : diferente
+- `!==` : estritamente diferente
+- `<` : menor
+- `>` : maior
+- `||` : ou
+- `%` : Atribuição de resto
+- `**` : Operador de exponencião
+- `operand++` : Postfix
+- `++operand` : Prefix
+- `operand + operand` : Infix
+
+
+**Operador:**
+- Unario = 1 operando: ++1
+- Binario = 2 operando: 1 + 1
+- Ternario = 3 operando: nota <= 1 ? 'True' : 'False'
+
+---
+
+#### `ESTRUTURA DE CONTROLE`
+- `if`
+- `switch`
+- `while`
+- `do/while`
+- `for`
+- `for/in`
+
+---
+
+#### `CONVENCÕES PARA TYPESCRIPT`
+- `S` = state
+- `T` = type
+- `K` = Key
+- `V`= value
+- `E` = element
 
 ---
 

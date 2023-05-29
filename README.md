@@ -16,7 +16,7 @@ And also maintain an environment of easy access for future consultations.
  
 ### Purpose of the Courses
 
-Introduction: JavaScript, HTML, CSS, Terminal, NodeJS, EJS, DOM, Git, SQL, HTTP, TCP. Addressing initial and complex issues.
+Introduction: JavaScript, TypeScript, HTML, CSS, Terminal, NodeJS, EJS, DOM, Git, SQL, HTTP, TCP. Addressing initial and complex issues.
 
 Therefore, even experienced users can extract important concepts from the courses added in this repository.
 
@@ -44,7 +44,13 @@ Therefore, even experienced users can extract important concepts from the course
 
 * Version control types, settings, CheatSheet, states (modified, prepared and committed), git log, hash values and head.
 
--  Abordamos callbacks, sistemas síncrono e assíncrono, promises 
+-  Abordamos callbacks, sistemas síncrono, assíncrono e promises.
+
+* Análise e explanacão de um projeto web em react, abordando sua arquitetura e escrita de sintaxe utilizando o vitejs.
+
+- Apresentacão do typescript e o motivo de se utilizar, utilizamos o playground typescript para fazer exercicios práticos da sua aplicacão.
+
+*
 
 ---
 
@@ -65,6 +71,8 @@ Therefore, even experienced users can extract important concepts from the course
 ### Frameworks / Modules
 - express
 - axios
+- React
+- ViteJs
 ---
 
 ### Master
