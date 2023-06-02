@@ -1,6 +1,6 @@
 # Complete Modern Web Course with structural, functional and OOP paradigm
 
-![BANNER CURSO](https://codeboost.com.br/img/ilustra-ideal.svg)
+![BANNER CURSO](/assets/discover-lp-illustration.webp)
 
 ### Repository information
 
@@ -92,3 +92,10 @@ Therefore, even experienced users can extract important concepts from the course
 - **[Discover github](https://github.com/marc3gomes/ModernWebCourse/tree/master/discover)**
 * **[Discover codepen](https://codepen.io/collection/pgaVkZ)**
 - **[Discover codesandbox](https://codesandbox.io/u/marc3gomes)**
+
+---
+
+### Certificado
+- [Discover Conectar](/discover-conectar-certificate.pdf)
+- [Discover Fundamentar](/discover-fundamentar-certificate.pdf)
+- [Discover Especializar](/discover-especializar-certificate.pdf)
