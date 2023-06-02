@@ -2,7 +2,7 @@
 
 ## Basic notes on the fundamentals of programming
 
-**Gerenciando versões das dependências NODEJS/NPM**
+**Managing versions of NODEJS/NPM dependencies**
 
 Example:
 ```javascript
@@ -12,91 +12,86 @@ Example:
 ```
 
 - `major.minor.patch`
-- `major` = Alteracoes que pode afetar o funcionamento da versão
-- `minor` = Alteracoes sem quebrar a versao atual
-- `patch` = Correcoes de bug
+- `major` = Changes that may affect the operation of the version
+- `minor` = Changes without breaking the current version
+- `patch` = Bug fixes
 
 **Sempre que atualizar o npm:**
-- `^` = O minor e patch serão atualizados
-- `~` = Apenas o patch será atualizado
-- `*` = Toda a versão será atualizada
-- `=` Versão fixa, não muda.
-
----
-
-#### CSS:
-
+- `^` = The minor and patch will be updated
+- `~` = Only the patch will be updated
+- `*` = All version will be updated
+- `=` = Fixed version, does not change.
 
 ---
 
 #### HTTP:
 
-- `OPTIONS` = Info da disponibilidade da requisicão
-Seguro: Sim
-Idempotente: Sim
-Body Request: Não
-Body Response: Não
-Cacheable: Não
-Uso em form HTML: Não 
+- `OPTIONS` = Request availability info
+insurance: yes
+Idempotent: Yes
+Body Request: No
+Body Response: No
+cacheable: no
+Usage in HTML form: No
 
-- `GET` = Pegar recurso e receber dados
-Seguro: Sim
-Idempotente: Sim
-Body Request: Não
-Body Response: Sim
-Cacheable: Sim
-Uso em form HTML: Sim
+- `GET` = Get resource and receive data
+insurance: yes
+Idempotent: Yes
+Body Request: No
+Body Response: Yes
+cacheable: yes
+Usage in HTML form: Yes
 
-- `HEAD` =  Semelhante ao Get mas recebemos somente o cabecalho
-Seguro: Sim
-Idempotente: Sim
-Body Request: Não
-Body Response: Não
-Cacheable: Não
-Uso em form HTML: Sim 
+- `HEAD` = Similar to Get but we only get the header
+insurance: yes
+Idempotent: Yes
+Body Request: No
+Body Response: No
+cacheable: no
+Usage in HTML form: Yes
 
-- `POST` = Enviar/Publicar/Cadastrar recurso
-Seguro: Não
-Idempotente: Não
-Body Request: Sim
-Body Response: Sim
-Cacheable: Sim
-Uso em form HTML: Sim
+- `POST` = Send/Publish/Register resource
+Insurance: No
+Idempotent: No
+Body Request: Yes
+Body Response: Yes
+cacheable: yes
+Usage in HTML form: Yes
 
-- `PUT` = Criar/Atualizar recurso
-Seguro: Não
-Idempotente: Sim
-Body Request: Sim
-Body Response: Não
-Cacheable: Não
-Uso em form HTML: Não
+- `PUT` = Create/Update resource
+Insurance: No
+Idempotent: Yes
+Body Request: Yes
+Body Response: No
+cacheable: no
+Usage in HTML form: No
  
-- `PATCH` = Modificar parcial o recurso
-Seguro: Não
-Idempotente: Não
-Body Request: Sim
-Body Response: Sim
-Cacheable: Não
-Uso em form HTML: Não
+- `PATCH` = Partially modify the resource
+Insurance: No
+Idempotent: No
+Body Request: Yes
+Body Response: Yes
+cacheable: no
+Usage in HTML form: No
   
-- `DELETE` = Remover um recurso
-Seguro: Não
-Idempotente: Sim
-Body Request: Sim
-Body Response: Sim
-Cacheable: Não
-Uso em form HTML: Não
+- `DELETE` = Remove a resource
+Insurance: No
+Idempotent: Yes
+Body Request: Yes
+Body Response: Yes
+cacheable: no
+Usage in HTML form: No
 
 **Curl:**
-- `-L` = Redirecionamento
-- `-i` = Visualizar o body e os cabeçalhos da requisição
-- `-I` = Visualizar apenas os cabeçalhos da requisição 
-- `-O` = Fazer o download de um arquivo, e escolher o nome
-- `-s` = Esconder informações de progresso
-- `-#` = Barra de progresso simples
-- `-X` = Especificar qual método usará
-- `-H` = Adicionar um cabeçalho
-- `-d` = Adicionar orgumentos
+- `-L` = Redirection
+- `-i` = View request body and headers
+- `-I` = View request headers only
+- `-O` = Download a file, and choose the name
+- `-s` = Hide progress information
+- `-#` = Simple progress bar
+- `-X` = Specify which method to use
+- `-H` = Add a header
+- `-d` = Add arguments
 
 
 ---
@@ -114,28 +109,28 @@ Uso em form HTML: Não
 - `%=` : Modular Assignment
 
 **Others**
-- `==` : igual
-- `===` : estritamente igual
-- `!=` : diferente
-- `!==` : estritamente diferente
-- `<` : menor
-- `>` : maior
-- `||` : ou
-- `%` : Atribuição de resto
-- `**` : Operador de exponencião
+- `==` : equal
+- `===` : strictly equal
+- `!=` : different
+- `!==` : strictly different
+- `<` : smaller
+- `>` : bigger
+- `||` : or
+- `%` : Remainder Assignment
+- `**` : Exponentiation operator
 - `operand++` : Postfix
 - `++operand` : Prefix
 - `operand + operand` : Infix
 
 
 **Operador:**
-- Unario = 1 operando: ++1
-- Binario = 2 operando: 1 + 1
-- Ternario = 3 operando: nota <= 1 ? 'True' : 'False'
+- Unary = 1 operand: ++1
+- Binary = 2 operand: 1 + 1
+- Ternary = 3 operand: grade <= 1 ? 'True' : 'False'
 
 ---
 
-#### `ESTRUTURA DE CONTROLE`
+#### `CONTROL STRUCTURE`
 - `if`
 - `switch`
 - `while`
@@ -145,7 +140,7 @@ Uso em form HTML: Não
 
 ---
 
-#### `CONVENCÕES PARA TYPESCRIPT`
+#### `CONVENTIONS FOR TYPESCRIPT`
 - `S` = state
 - `T` = type
 - `K` = Key
@@ -389,38 +384,38 @@ console.log('a =', a)
 
 ### `Destructuring`
 
-Retira algo da estrutura de um Array || Object.
+Removes something from the structure of an Array || Object.
 
 Example
 ```javascript
-const pessoa = {
-    nome: 'Ana',
-    idade: 5,
-    endereco: {
+const people = {
+    name: 'Ana',
+    age: 5,
+    adress: {
         logradouro: 'Rua ABC',
-        numero: 1000
+        number: 1000
     }
 }
 
-const { nome, idade } = pessoa
+const { name, age } = people
 
-console.log(nome, idade)
+console.log(name, age)
 ```
 
 ---
 
 ### `Callback`
 
-Podemos utilizar uma funcão como argumento para outra funcão
+We can use a function as an argument to another function
 
 Example
 ```javascript
-function imprimirDado(dados) {
-    console.log(dados())
+function printDate(data) {
+    console.log(data())
 }
 
-imprimirdado(function () {
-    return 'Olá mundo!'
+printDate(function () {
+    return 'Hello Word!'
 })
 ```
 
@@ -428,35 +423,35 @@ imprimirdado(function () {
 
 ### `Promise`
 
-Um objeto JavaScript com a compromessa de que algo será realizado
+A JavaScript object with the compress that something will be done
 
-*Stagios:*
-- `Pending` = Estado inicial, promessa iniciada
-- `Fulfilled` = Promessa aceita/concluída
-- `Rejectd` = Promessa rejeitada/concluída
-- `Settled` = Concluiída, seja aceita ou rejeitada
+*Stages:*
+- `Pending` = Initial state, promise started
+- `Fulfilled` = Promise accepted/completed
+- `Rejectd` = Promise rejected/completed
+- `Settled` = Completed, either accepted or rejected
 
 Example
 ```javascript
-let pedidoCar = True
+let requestCar = True
 
-console.log('Pedir Uber')
+console.log('Order Uber')
 
 const promise = new Promise ((resolve, reject) => 
 {
-    if (pedidoCar) {
-        return resolve('Carro chegou!')
+    if (requestCar) {
+        return resolve('Car has arrived!')
     }
     
-    return reject('Motorista recusou')
+    return reject('Driver refused')
 })
 
-console.log('Aguardando')
+console.log('Waiting')
 
 promise
     .then(result => console.log(result))
     .catch(error => console.log(error))
-    .finally(() => console.log('Obrigado, por ussar nosso aplicativo.'))
+    .finally(() => console.log('Thanks for using our app.'))
 
 
 ```

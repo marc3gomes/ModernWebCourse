@@ -1,6 +1,6 @@
 # Complete Modern Web Course with structural, functional and OOP paradigm
 
-![BANNER CURSO](/assets/discover-lp-illustration.webp)
+![BANNER CURSO](/assets/discover-lp-illustration-banner.webp)
 
 ### Repository information
 
@@ -44,11 +44,11 @@ Therefore, even experienced users can extract important concepts from the course
 
 * Version control types, settings, CheatSheet, states (modified, prepared and committed), git log, hash values and head.
 
--  Abordamos callbacks, sistemas síncrono, assíncrono e promises.
+-  We covered callbacks, synchronous and asynchronous systems, and promises.
 
-* Análise e explanacão de um projeto web em react, abordando sua arquitetura e escrita de sintaxe utilizando o vitejs.
+* Analysis and explanation of a react web project, approaching its architecture and syntax writing using vitejs.
 
-- Apresentacão do typescript e o motivo de se utilizar, utilizamos o playground typescript para fazer exercicios práticos da sua aplicacão.
+- Presentation of the typescript and the reason for using it, we use the typescript playground to do practical exercises of its application.
 
 
 ---
@@ -95,7 +95,7 @@ Therefore, even experienced users can extract important concepts from the course
 
 ---
 
-### Certificado
+### Certificates
 - [Discover Conectar](/discover-conectar-certificate.pdf)
 - [Discover Fundamentar](/discover-fundamentar-certificate.pdf)
 - [Discover Especializar](/discover-especializar-certificate.pdf)
