@@ -50,7 +50,6 @@ Therefore, even experienced users can extract important concepts from the course
 
 - Apresentacão do typescript e o motivo de se utilizar, utilizamos o playground typescript para fazer exercicios práticos da sua aplicacão.
 
-*
 
 ---
 

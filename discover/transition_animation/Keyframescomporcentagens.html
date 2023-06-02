@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+
+            animation-name: example-two;
+            animation-duration: 10s;
+        }
+
+        @keyframes example-one {
+            from {
+                background-color: blueviolet;
+            }
+
+            to {
+                background-color: rosybrown;
+            }
+        }
+
+        @keyframes example-two {
+            0% {
+                background-color: blueviolet;
+            }
+
+            25% {
+                background-color: rosybrown;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
