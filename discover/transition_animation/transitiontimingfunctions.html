@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .line {
+            width: 100%;
+            background-color: blue;
+            height: 25px;
+            margin-bottom: 10px;
+
+            transition: width;
+            transition-duration: 1s;
+        }
+
+        body:hover .line {
+            width: 20px;
+            background-color: rgb(255, 0, 234);
+
+        }
+        
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        .cube {
+            transition-timing-function: cubic-bezier(0.175, 0.855, 0.32, 1.275);
+        }
+    </style>
+</head>
+<body>
+    <div class="line ease">Ease</div>
+    <div class="line linear">Linear</div>
+    <div class="line ease-in">Ease in</div>
+    <div class="line ease-out">Ease out</div>
+    <div class="line ease-in-out">Ease out</div>
+    <div class="line cube">Cube</div>
+</body>
+</html>
