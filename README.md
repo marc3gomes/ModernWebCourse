@@ -1,6 +1,6 @@
 # Complete Modern Web Course with structural, functional and OOP paradigm
 
-![BANNER CURSO](/assets/discover-lp-illustration-banner.webp)
+![BANNER CURSO](./.github/discover-lp-illustration-banner.webp)
 
 ### Repository information
 
@@ -96,6 +96,6 @@ Therefore, even experienced users can extract important concepts from the course
 ---
 
 ### Certificates
-- [Discover Conectar](/discover-conectar-certificate.pdf)
-- [Discover Fundamentar](/discover-fundamentar-certificate.pdf)
-- [Discover Especializar](/discover-especializar-certificate.pdf)
+- [Discover Conectar](./certificates/discover-conectar-certificate.pdf)
+- [Discover Fundamentar](./certificates/discover-fundamentar-certificate.pdf)
+- [Discover Especializar](./certificates/discover-especializar-certificate.pdf)
