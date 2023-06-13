@@ -1,0 +1,92 @@
+<div id="slider">
+
+    <p>
+        <img class="selected" src="http://files.cod3r.com.br/curso-web/imagem1.jpg" 
+        alt="Muro da cidade"
+        width="513"
+        height="342"
+        title="Muro da cidade por tarso Bassa">
+    </p>
+
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+        alt="Intro Cod3r" height="342"
+        >
+    </p>
+
+    <p class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" 
+        alt="Rio de Janeiro" height="342">
+    </p>
+
+</div>
+
+<style>
+    
+
+    #slider p {
+        position: absolute;
+        
+    }
+    #slider p img{
+        display: none;
+        
+    }
+
+    #slider p img.selected{
+        display: block;
+        
+    }
+
+    .circular {
+        width: 513px;
+        background-color: grey;
+    }
+
+    .texto {
+        width: 400px;
+    }
+
+    .texto img {
+        margin-right: 10px;
+    }
+
+    .cidade {
+        width: 513;
+        height: 342px;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>
+
+
+<script>
+    let time = 2000,
+        currentImageIndex = 0,
+        imagens = document.querySelectorAll("#slider p img")
+        max = imagens.length;
+
+    function nextImage() {
+
+        imagens[currentImageIndex].classList.remove("selected")
+
+        currentImageIndex++
+
+        if(currentImageIndex >= max)
+        currentImageIndex = 0
+
+        imagens[currentImageIndex].classList.add("selected")
+    }
+
+
+    function start() {
+        setInterval(() => {
+            nextImage()
+        }, time)
+    }
+
+    window.addEventListener("load", start)
+
+</script>

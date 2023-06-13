@@ -1,0 +1,44 @@
+<video  id="meuVideo" width="800" height="450" controls autoplay constrolsList="">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+</video>
+
+<div wm-progresso="meuVideo" class="progresso">
+    <div></div>
+</div>
+
+<div>
+    <button wmPlay="meuVideo" onClick="wmPlay()">Play</button>
+    <button wmPouse="meuVideo" onClick="wmPouse()">Pause</button>
+</div>
+
+<style>
+    .progresso {
+        height: 20px;
+        width: 500px;
+        border: solid 1px #444;
+        margin: 20px;
+    }
+
+    .progresso > div {
+        background-color: red;
+        color: #fff;
+        height: 100%;
+        text-align: right;
+        font-size: 14px;
+        width: 0%;
+    }
+</style>
+
+<script>
+    const video = document.getElementById("meuVideo")
+
+    function wmPlay() {
+        video.play();
+    }
+
+    function wmPouse() {
+        video.pause();
+    }
+
+
+</script>
