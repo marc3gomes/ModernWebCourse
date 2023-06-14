@@ -247,6 +247,15 @@ console.log(product)
 
 ---
 
+### `This`
+
+`This` references the current object of the execution that is in process. And it can vary depending on how the code and calls are being made.
+
+We can use `.bind()`, to bind a certain object and force it to be the owner of the method execution. We need to pass to `bind` the object we want it to bind to `this`.
+
+It is important to note that the `this` in `arrow function` is fixed, it is associated with the context in which the function was written.
+
+---
 
 ### `Function`
 
